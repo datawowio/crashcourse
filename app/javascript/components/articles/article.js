@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import Layout from '../shared/layout'
 
 class Article extends Component {
 
@@ -18,7 +19,7 @@ class Article extends Component {
 
   render() {
     return (
-      <Fragment >
+      <Layout>
         {this.state.articles.map(
           (article, index) => <li key={index}>
             <p>id: {article.id}</p>
@@ -26,7 +27,7 @@ class Article extends Component {
             <p>body: {article.body}</p>
           </li>
         )}
-      </Fragment>
+      </Layout>
     )
   }
 }
