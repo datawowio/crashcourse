@@ -1,9 +1,7 @@
 class PagesController < ApplicationController
 
-  def hello
-  end
+  def todo_list
 
-  def hi
   end
 
 end
